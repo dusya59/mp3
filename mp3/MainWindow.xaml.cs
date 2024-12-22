@@ -312,8 +312,8 @@ loadMusic(songs[musicIndex]);
     </body>
     </html>";
 
-            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string FolderPath = Path.Combine(baseDirectory, "mp3");
+            
+            string FolderPath = AppDomain.CurrentDomain.BaseDirectory;
 
             webView.CoreWebView2.SetVirtualHostNameToFolderMapping(
                 "mp3.local",
